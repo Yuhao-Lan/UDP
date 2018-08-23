@@ -21,7 +21,7 @@ $make
 
 **Server terminal:**
 
-Usage: ./Server file_to_send [port number]
+**Usage: ./Server file_to_send [port number]**
 
 For example:
 
@@ -41,7 +41,7 @@ Waiting for data...
 
 **Client terminal:**
 
-Usage: ./Server IP-address [port number] [Name-of-file-to-receive]
+**Usage: ./Server IP-address [port number] [Name-of-file-to-receive]**
 
 
 $./Client 127.0.0.1 11114 result0
