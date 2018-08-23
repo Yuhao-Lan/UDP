@@ -19,32 +19,46 @@ use make to compile
 
 $make
 
-Server terminal:
+**Server terminal:**
+
+Usage: ./Server file_to_send [port number]
+
+For example:
 
 $./Server test 11114
-Waiting for data...
-===>Received requested message successfully!!: Please send me a file
-==>Send successfully!!!!!
-Waiting for data...
-===>Received requested message successfully!!: Please send me a file
-==>Send successfully!!!!!
-Waiting for data...
-===>Received requested message successfully!!: Please send me a file
-==>Send successfully!!!!!
-Waiting for data...
 
-Client terminal:
+Waiting for data...
+===>Received requested message successfully!!: Please send me a file
+==>Send successfully!!!!!
+
+Waiting for data...
+===>Received requested message successfully!!: Please send me a file
+==>Send successfully!!!!!
+
+Waiting for data...
+===>Received requested message successfully!!: Please send me a file
+==>Send successfully!!!!!
+
+**Client terminal:**
+
+Usage: ./Server IP-address [port number] [Name-of-file-to-receive]
+
 
 $./Client 127.0.0.1 11114 result0
 =>Send requested message  successfully
 ===>Received completely and successfully!!!
+
 $./Client 127.0.0.1 11114 result1
 =>Send requested message  successfully
 ===>Received completely and successfully!!!
+
 $./Client 127.0.0.1 11114 result2
 =>Send requested message  successfully
 ===>Received completely and successfully!!!
+
+**result0 and result1 have no difference**
 $diff result0 result1
+
 $diff result1 result2
 
 
